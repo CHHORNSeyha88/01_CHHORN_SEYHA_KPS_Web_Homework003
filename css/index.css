@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    
+}
+body{
+    height: 1000lvh;
+    width: 100%;
+}
+#logo{
+
+    font-size: 1.3rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;  
+
+}
+header{
+    background-color: rgb(252, 253, 253 , 0.4);
+    padding: 1rem;
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 2;
+}
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 10px;
+    
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    
+}
+.navbar-menu li{
+    list-style: none;
+}
+
+header nav .navbar-menu li a{
+    color: black;
+    padding-inline: 20px;
+    font-weight: 500;
+}
+
+header nav .navbar-menu li a:hover { 
+    border-bottom: 1px solid black;
+
+}
+
+header nav ul li:first-child::after{
+    content: '|';
+}
+header nav ul li:nth-child(3):before{
+    content: '|';
+}
+
+.btn{
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.navbar-btn{
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+.main-btn{
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: #80808063 0px 2px 18px 0px;
+    margin-left: 10px;
+}
+.main-btn a{
+    background-color: #289ebc;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: #80808063 0px 2px 18px 0px;
+
+}
+.main-btn a:hover{
+    background-color: cadetblue;
+    color: white;
+    border-radius: 1rem;
+}
+
+.navbar-btn a{
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: #80808063 0px 2px 18px 0px;
+
+}
+.navbar-btn a:hover{
+    background-color: cadetblue;
+    color: white;
+    border-radius: 1rem;
+}
+.navbar-btn a:active{
+    border: 2px solid  rgb(22, 91, 94);;
+    background-color: rgb(245, 255, 255);
+    color: cadetblue;
+    border-radius: 1rem;
+}
+
+
+aside .sidebar-menu {
+    display: flex;
+    height: 35rem;
+    justify-content: center;
+    align-content: start;
+    gap: 2rem;
+    list-style: none;
+    margin-left: 20rem;
+    width: 50px;
+
+}
+main{
+    display: flex;
+}
+
+.sidebar-menu {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    transform: rotate(-90deg);
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#lastest-munu{
+
+    border-bottom:2px solid cadetblue ;
+}
+
+.main-container {
+    background-color: rgba(237, 237, 237, 0.945);
+    min-width: 70%;
+    border-radius: 8px;
+}
+main {
+    position: relative;
+    display: flex;
+    justify-self: center;
+}
+.main-container{
+    display: flex;
+    justify-content: space-between;
+
+   
+}
+.card-items{
+    position: relative;
+    right: 28px;
+    margin: 2rem;
+    width: 70rem;
+    height: 40rem;
+  
+}
+.landscape-box{
+    width: 20rem;
+    height: 12rem;
+    border-radius: .6rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: gray 1px 1px;
+    
+ 
+}
+.circle-img {
+    background-image: url('https://comenian.org/wp-content/uploads/2023/10/tom-1200x1200.jpeg');
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: blue;
+    display: block; 
+    object-fit: cover; 
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.first-lanscape{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    gap: 1rem;
+
+}
+.first-lanscape h5{
+    width: 200px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.first-lanscape h6{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-right: 5rem;
+    
+}
+.profile-items, .cicle-img ,h6 ,p{
+    margin-top: 1rem;
+    margin-left: 10px;
+    gap: 5rem;
+}
+.profile-rating .star-icon{
+    color: #fad76d;
+    line-height: .2rem;
+}
+.portrait-parent{
+    display: flex;
+    flex-direction: column;
+}
+.portrait-box{
+    background-image: url('https://i.pinimg.com/736x/ca/87/d0/ca87d0a1a9935d8418d6d36b5472d1ac.jpg');
+    object-fit: cover; 
+    background-size: cover;
+    background-position: center;
+    margin-left: 2rem;
+    height: 22rem;
+    width: 15rem;
+    border-radius: 8px;
+    background-color: rgb(50, 205, 128);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    box-shadow: #555151ab 7px 9px 20px 0px;
+}
+.portrait-item{
+    margin: 10px;
+    border-radius: 1rem;
+    display: flex;
+    width: 13rem;
+    height: 7rem;
+    background-color: rgba(240, 248, 255, 0.785);
+    display: flex;
+    padding: .3rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+.profile-rating .first-icon-portrail{
+    width: 160px;
+    margin-left: -1rem;
+}
+
+.view-rating i{
+    color: #eec446;
+
+}
+.discription{
+    font-weight: 700;
+
+}
+.view-rating p {
+    font-weight: 600;
+}
+
+.first-portrait{
+    margin-left: -40px;
+    margin-top: 4.5rem;
+    background-color: #eec446;
+}
+.second-lanscape{
+    margin-top: 8rem;
+    margin-left: 7rem;
+    width: 75rem;
+    background-color: #eec446;
+}
+.parent-box-seconndline{
+    display: flex;
+}
+
+.card-text{
+    margin: 0;
+    position: relative;
+    bottom: 12rem;
+    left: 2rem;
+    width: 100rem;
+    height: 20rem;
+}
+.card-text h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+.card-text h1::first-letter{
+    color: #289ebc;
+    font-weight: bold;
+    font-size: 5rem;
+}
+.card-text p{
+    width: 290px;
+    line-height: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1rem;
+    color: rgba(0, 0, 0, 0.708);
+    margin-bottom: 4rem;
+}
