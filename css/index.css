@@ -21,6 +21,7 @@ body{
 
 }
 header{
+
     background-color: rgb(252, 253, 253 , 0.4);
     padding: 1rem;
     position: sticky;
@@ -46,7 +47,6 @@ header nav ul{
 
 header nav .navbar-menu li a{
     color: black;
-    padding-inline: 20px;
     font-weight: 500;
 }
 
@@ -57,14 +57,18 @@ header nav .navbar-menu li a:hover {
 
 header nav ul li:first-child::after{
     content: '|';
+    padding-inline: 20px;
+
 }
 header nav ul li:nth-child(3):before{
     content: '|';
+    padding-inline: 20px;
+
 }
 
 .btn{
     border: none;
-    border-radius: 1rem;
+    border-radius: 1.3rem;
     cursor: pointer;
 }
 
@@ -80,7 +84,7 @@ header nav ul li:nth-child(3):before{
     font-weight: bold;
     transition: 0.3s;
     text-decoration: none;
-    border-radius: 1rem;
+    border-radius: 1.3rem;
     font-weight: bold;
     transition: 0.3s;
     box-shadow: #80808063 0px 2px 18px 0px;
@@ -91,23 +95,19 @@ header nav ul li:nth-child(3):before{
     color: white;
     text-decoration: none;
     padding: 0.5rem 2rem;
-    border-radius: 1rem;
+    border-radius: 1.3rem;
     font-weight: bold;
     transition: 0.3s;
     box-shadow: #80808063 0px 2px 18px 0px;
 
 }
-.main-btn a:hover{
-    background-color: cadetblue;
-    color: white;
-    border-radius: 1rem;
-}
+
 
 .navbar-btn a{
     background-color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 0.5rem 2rem;
-    border-radius: 1rem;
+    border-radius: 1.3rem;
     font-weight: bold;
     transition: 0.3s;
     box-shadow: #80808063 0px 2px 18px 0px;
@@ -116,13 +116,13 @@ header nav ul li:nth-child(3):before{
 .navbar-btn a:hover{
     background-color: cadetblue;
     color: white;
-    border-radius: 1rem;
+    border-radius: 1.3rem;
 }
-.navbar-btn a:active{
+.navbar-btn a:focus{
     border: 2px solid  rgb(22, 91, 94);;
     background-color: rgb(245, 255, 255);
     color: cadetblue;
-    border-radius: 1rem;
+    border-radius: 1.3rem;
 }
 
 
@@ -142,6 +142,8 @@ main{
 }
 
 .sidebar-menu {
+    position: relative;
+    left: 9rem;
     text-decoration: none;
     color: black;
     display: flex;
@@ -158,9 +160,11 @@ a{
 }
 
 .main-container {
+    position: relative;
+    right: 4rem;
     background-color: rgba(237, 237, 237, 0.945);
     min-width: 70%;
-    border-radius: 8px;
+    border-radius: 1.3rem;
 }
 main {
     position: relative;
@@ -184,17 +188,15 @@ main {
 .landscape-box{
     width: 20rem;
     height: 12rem;
-    border-radius: .6rem;
+    border-radius: 1.3rem;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
-    align-items: center;
-    box-shadow: gray 1px 1px;
-    
+    align-items: center;    
  
 }
 .circle-img {
-    background-image: url('https://comenian.org/wp-content/uploads/2023/10/tom-1200x1200.jpeg');
+    background-image: url('https://i.pinimg.com/736x/2d/b0/79/2db079ccb35f6ec99aee778c6c9fbae5.jpg');
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -203,7 +205,7 @@ main {
     object-fit: cover; 
     background-size: cover;
     background-position: center;
-    
+    margin-bottom: 10px;
 }
 
 .first-lanscape{
@@ -238,19 +240,30 @@ main {
     flex-direction: column;
 }
 .portrait-box{
-    background-image: url('https://i.pinimg.com/736x/ca/87/d0/ca87d0a1a9935d8418d6d36b5472d1ac.jpg');
     object-fit: cover; 
     background-size: cover;
     background-position: center;
     margin-left: 2rem;
-    height: 22rem;
+    height: 20rem;
     width: 15rem;
-    border-radius: 8px;
+    border-radius: 1.3rem;
     background-color: rgb(50, 205, 128);
     display: flex;
     justify-content: center;
     align-items: end;
     box-shadow: #555151ab 7px 9px 20px 0px;
+}
+.second-portrait{
+    background-image: url('https://i.pinimg.com/736x/91/16/83/911683a0033bebb83de72be19dedda82.jpg');
+
+}
+.first-portrait{
+    background-image: url('https://i.pinimg.com/736x/51/c2/f4/51c2f49fcc019cca12c3987b46f01d36.jpg');
+    position: relative;
+    right: 22px;
+    top: 20px;
+    
+
 }
 .portrait-item{
     margin: 10px;
@@ -292,7 +305,6 @@ main {
     margin-top: 8rem;
     margin-left: 7rem;
     width: 75rem;
-    background-color: #eec446;
 }
 .parent-box-seconndline{
     display: flex;
@@ -324,4 +336,95 @@ main {
     margin: 1rem;
     color: rgba(0, 0, 0, 0.708);
     margin-bottom: 4rem;
+}
+.card-text i{
+    text-align: center;
+    color: #289ebc;
+    font-size: 1rem;
+    margin-left: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+img{
+    width: 100%;
+    height: 165px;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+}
+.image-controll{
+    display: flex;
+    justify-content: space-around;
+    align-items: self-start;
+
+}
+.single-img{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 100px;
+    border-radius: 0.5rem;
+    position: relative;
+    bottom: 5px;
+}
+.multi-img{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3px;
+    margin-right: 40px;
+    position: relative;
+    bottom: 5px;
+
+}
+.multi-img p{
+    text-align: center;
+    font-weight: 500;
+    width: 140px;
+    font-size: 15px;
+}
+.multi-img-item{
+    position: relative;
+    width: 90px;
+    z-index: 1;
+}
+.img-element{
+    position: absolute;
+    height: 120px;
+    border-radius: 1.2rem;
+}
+.img-element img{
+    position: absolute;
+}
+.img-element:nth-child(2){
+    left: 40px;
+    z-index: 1;
+}
+.img-element:nth-child(3){
+    left: 90px;
+    z-index: 2;
+}
+.profile-rating h6{
+    margin-left: 45px;
+}
+.location-icon{
+    position: relative;
+    top: 23px;
+    right: 30px;
+    width: 20px;
+    height: 25px;
+    font-size: 1px;
+    border: none;
+}
+.view-rating p {
+    position: relative;
+    top: 21px;
+    right: 10px;
+}
+.discription h3{
+    position: relative;
+    bottom: 5px;
+    font-size: 1rem;
+    margin-left: 10px;
+    font-weight: 500;
 }
